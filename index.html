@@ -15,41 +15,57 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+
+ 
+
     
 
 
 </head>
 
+
 <body>
 
-      <!-- Logo -->
+    
+        <div id="header" >
 
-<div id="logo">
-    <a href="#hero"> <h3>AM Design</h3> </a>
-</div>
+            <!-- Logo -->
+      
+      <div id="logo">
+          <a href="#hero"> <h3>AM Design</h3> </a>
+      </div>
+      
+      
+           <!--This is my navigation bar-->
+      
+          <div id="navTrigger" onclick="toggleNav()"></div>
+      
+          <div id="navWrapper">
+      <ul id="nav">
+              <a href="#designs" onclick="toggleNav()">
+                  <li>Designs</li>
+              </a>
+              <a href="#bio" onclick="toggleNav()">
+                  <li>Bio</li>
+              </a>
+              <!-- <a href="Fun.html" onclick="toggleNav()">
+                  <li>Fun</li>
+              </a> -->
+              <a href="#cv" onclick="toggleNav()">
+                  <li>CV</li>
+              </a>
+              <a href="#contact" onclick="toggleNav()">
+                  <li>Contact</li>
+              </a>
+      
+          </div>
+      
+          </ul>
+      
+      </div>
+      </div>
 
 
-     <!--This is my navigation bar-->
-
-    <div id="navTrigger" onclick="toggleNav()"></div>
-
-    <div id="navWrapper">
-<ul id="nav">
-        <a href="#designs" onclick="toggleNav()">
-            <li>Designs</li>
-        </a>
-        <a href="#bio" onclick="toggleNav()">
-            <li>Bio</li>
-        </a>
-        <a href="#cv" onclick="toggleNav()">
-            <li>CV</li>
-        </a>
-        <a href="#contact" onclick="toggleNav()">
-            <li>Contact</li>
-        </a>
-
-    </ul>
-</div>
 
 <!--Hero Section-->
 
@@ -57,7 +73,8 @@
     <source src="images/Video.mp4.mov">
   </video> -->
 
-      <div id= "hero" class="section">
+      
+  <div id= "hero" class="section">
         <h1 class= "bg" class="center-align"> Ana Mathew</h1>
         <h2 class="title"> UX/UI Designer</h2>
         <!-- <h5 class="center-align"> Designing, Building, And Innovating Things That Matter.</h5> -->
@@ -66,6 +83,7 @@
             <div class="arrow"></div>
         </a>
     </div>
+
    
 
 
@@ -98,9 +116,8 @@
                             <img src="images/TimeAware/Group 27.png">
                         </div>
                         <div class="card-content">
-                            <span class="card-title">Time Aware</span>
-                            <h4 class="card-content">I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</h4>
+                            <h3 class="card-title1">Time Aware</h3>
+                            <!-- <h4 class="card-content">Hello</h4> -->
                         </div>
                     </div>
                 </a>
@@ -110,24 +127,23 @@
                         <img src="images/tripSYNC/tripSYNC Preview.png">
                     </div>
                     <div class="card-content">
-                        <span class="card-title">tripSYNC</span>
-                        <h4 class="card-content">I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</h4>
+                        <h3 class="card-title3">tripSYNC</h3>
+                        <!-- <h4 class="card-content">I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</h4> -->
                     </div>
                 </div>
             </a>
             </div>    
 
             <div class="col s12 m6 l6">
-                <a href="Case 2.html">
+                <a href="LLE.html">
                     <div class="card">
                         <div class="card-image">
                             <img src="images/LLE /LLE preview.png">
                         </div>
                         <div class="card-content">
-                            <span class="card-title">Little Light Embroidery</span>
-                            <h4 class="card-content">I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</h4>
+                            <h3 class="card-title2">Little Light Embroidery</h3>
+                            <!-- <h4 class="card-content"> Use little markup to use effectively.</h4> -->
                         </div>
                     </div>
                 </a>
@@ -137,9 +153,9 @@
                     <img src="images/HCPH/HCPH Preview.png">
                 </div>
                 <div class="card-content">
-                    <span class="card-title">Harris County Public Health</span>
-                    <h4 class="card-content">I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</h4>
+                    <h3 class="card-title4">Harris County Public Health</h3>
+                    <!-- <h4 class="card-content">I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</h4> -->
                 </div>
             </div>
         </div> 
@@ -156,7 +172,7 @@
         <div class="container"> 
             <div class="row">
                 <div class="col s12 m6 l6"> 
-                    <img src="images/bio image.png" />
+                    <img class="profile" src="images/bio image.png" />
                 </div>
                 <div class="col s12 m6 l6">  
                     <p><h3>Hello, I'm Ana! A UX/UI designer with a passion for innovation and making sure people are at the forefront of everything I create.</h3></p> 
@@ -166,7 +182,7 @@
                         By fusing form and function, I create seamless interfaces, intuitive user experiences, and visually stunning visuals that leave a lasting impression. I love transforming ideas into tangible creations.
                     </h4> </p>
                         <p><h4>Take a behind-the-scenes look into my design work, and I would love the opportunity to collaborate on your next project!</h4></p>
-                        <a class="waves-effect waves-light btn"> GET IN TOUCH </a>
+                        <a href="#contact" class="waves-effect waves-light btn"> GET IN TOUCH </a>
                     </div>
             </div>
         </div>
@@ -178,27 +194,20 @@
         <div class="container">
             <div class="row">
                 <div class="s12 m12 l12">
-    <img src="images/Design Resume.jpg"/></div>
+    <img src="images/Design Resume.png"/></div>
 </div>
 </div>
     </div>
 </div>
    
 <!--Contact-->
-<div class="contact">
+<div class="contact" >
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12"> </div>
         </div>
     </div>
 </div>
-
-<!-- <div class="contactText">
-                <h2>Let's Connect</h2> 
-                <h4>Thanks for visiting my portfolio! Here are some ways to stay in touch:</h4>
-            </div>
-         -->
-
 
 <div id= "contact">
     <div>
@@ -209,7 +218,8 @@
                         <h2>Let's Connect</h2> 
                         <h4>Thanks for visiting my portfolio! Here are some ways to stay in touch:</h4>
                     </div>
-                    <a class="waves-effect waves-light btn">anamathew98@gmail.com </a>
+                    <a href="mailto:anamathew.business@gmail.com" class="waves-effect waves-light btn">anamathew.business@gmail.com </a>
+                    <a href="https://www.linkedin.com/in/ana-mathew-9b4b07139/" target="_blank" rel="noopener noreferrer" class="waves-effect waves-light btn">LinkedIn</a>
  </div>
 </div>
 </div>
