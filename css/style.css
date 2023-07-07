@@ -165,7 +165,7 @@ a {}
     top: 32px;
     right:24px;
     background-image: url('../images/icons/hamburger-menu-5.svg');
-    z-index:2;
+    z-index: 3;
     cursor:pointer;
     display:none;
 }
@@ -191,7 +191,7 @@ a {}
 
 
     #navWrapper {
-        background-color: rgba(11, 11, 10, 0.81);
+        background-color: rgba(11, 11, 10, 0.90);
         backdrop-filter: blur(20px);
         z-index: -1;
         opacity:0;
@@ -235,6 +235,7 @@ a {}
     /* right: 0%;
     bottom: 0%; */
     height: 100%;
+    width:100%;
 
     
 
@@ -266,12 +267,14 @@ h1.bg {
     padding: 10px;
 }
 
-h2.title {
-    top:50%;
+.title {
+    top:70%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
-    color:#1B1A19
+    color:#1B1A19;
+    z-index: 2;
+    position:absolute;
 
 }
 
@@ -334,7 +337,7 @@ h2.title {
     height:90px;
     background-image: url('../images/icons/arrow.svg');
     position: absolute;
-    top: 90vh;
+    top: 91vh;
     left:45vw;
 
 }
@@ -387,6 +390,7 @@ h2.title {
 .card {
     background-color: var(--primary-color);
     border-radius: 20px;
+    width:100%;
 
     
   }
@@ -399,7 +403,7 @@ h2.title {
 }
   
   .card-image {
-    padding: 20px 20px 0 20px;
+    padding: 20px;
   }
   
   .card .card-image img {
@@ -502,6 +506,7 @@ h2.title {
     border-width: 10px;
     margin: 10px;
     border-radius: 20px;
+    z-index: 1;
 
 }
 
