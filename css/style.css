@@ -329,6 +329,8 @@ h1.bg {
 
     min-height: 100vh;
     width:100%;
+    text-align: center;
+    
 
 }
 
@@ -443,7 +445,7 @@ h1.bg {
             font-style: normal;
             font-weight: 400;
             font-size: 24px;
-            text-shadow: 4px 6px 6px #34d4d7;
+            text-shadow: 4px 6px 6px #9934d7;
             color: beige;
             padding:0;
             margin:0;
